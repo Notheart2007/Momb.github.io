@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+-MOMB服务器
+-更改内容——pky114514
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="MOMB " />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title> Minecraft1.20+ 服务器</title>
+		<link rel="stylesheet" type="text/css" href="static/css/main.css">
+		<link rel="shortcut icon" href="img/cargo_managere.png" type="image/x-icon">
+		<script src="static/js/main.js"></script>
+		<style type="text/css">
+			.loading{width: 100%;height: 100%;z-index: 100;position: fixed;background: #FCFCFC;}.loading-img{width: 50px;height: 45px;margin: auto;background: url(static/images/1612704618.gif);}#menu-box{position: fixed;overflow: hidden;width: 100%;transition-duration:0.4s;height: 50px;background: none;}.menu{width: 1005px;margin:auto;height: 50px;background:none;}.menu-item h2 a{padding-top:6px;color:#C6CDD4;transition-duration: 0.4s;padding-left:10px;float:left;}.menu-item a{padding:13px 15px;color:#C6CDD4;float:right;transition-duration: 0.4s;}.menu-item a:hover{color:white;font-size:20px;}.menu-item h2 a:hover{color:white;font-size:27px;}#item-box{height: 1150px;background:white;overflow: hidden;}
+		</style>
+	</head>
+	<script>
+		document.onreadystatechange=function(){
+			if(document.readyState=="complete"){
+				$(".loading").fadeOut();
+			}
+		}
+	</script>
+	<body>
+		<div class="loading">
+			<div class="loading-img">
+			</div>
+		</div>
+		<div id="banner">
+			<div class="join-buttom">
+				<div class="join-item">
+					<h2>彩蛋</h2>
+					    <p>我是彩蛋</p>
+					</div>
+				<h1><a href="index.html">回到主页</a></h1>
+			</div>
+		</div>
+		<div id="item-box">
+			<div class="box"><a href="https://qm.qq.com/q/c2t1RVOb1S">&#9668&#9668 &nbsp; &nbsp;加入我们</a></div>
+			<div class="item-page-box">
+				<div class="item-page">
+					<h2>pky114514的一些话</h2>
+					   <div class="item-font">
+						<img src="微信图片_20240329212001.jpg">
+						<h3></h3>
+						<p>服务器由腐竹TEMP MEMZ一手操办</p>
+							<p>	我从一档一直走到现在，帮了腐竹许多忙</p>
+							<p>我见证了服务器的兴起和落寞</p>
+							<p>这个网页也是我用模板搞的</p>
+							<p>我在现实生活里人际关系很差，简直是个i人</p>
+							<p>直到我发现这个服</p>
+							<p>他就是我心灵的寄所</p>
+							<p>虽然平时学业繁忙，却还要来看这个服务器</p>
+							<p>一看到他们我的疲惫就仿佛消失</p>
+							<p>（腐竹人很好！！管理们也很好！！）</p>
+								<p>我们目前已走过<span id="time"></span></p>
+						<h2>回到主页请上划！</h2>
+								
+							<h3>QQ群：585453963</h3>
+					</div>
+				</div>
+				<script type="text/javascript" src="static/js/time.js"></script>
+			</div>
+			<div id="footer">
+				<p id="counter"></p>
+				<p><a href="http://www.svipzy.cn" target="_blank">© 2022- 2023 | 𝙈𝙊𝙈𝘽</a></p>
+			</div>
+		</div>	
+		<script src="static/js/jquery.js"></script>
+	<script>
+			function scroll() {
+					var top = $("#item-box").offset().top;
+					var scrollTop = $(window).scrollTop();
+					if (scrollTop < top) {
+						$('#menu-box').css({"background":"none"});
+						$('#menu-box').css({"box-shadow":"none"});
+						$(".menu-item h2 a").css({"color":"#C6CDD4"})
+						$(".menu-item a").css({"color":"#C6CDD4"});
+					} else {
+						$("#menu-box").css({"background":"#FFFFFF"});
+						$("#menu-box").css({"box-shadow":"0px 0px 8px #EAEAEA"});
+						$(".menu-item h2 a").css({"color":"#333333"})
+						$(".menu-item-list a").css({"color":"#333333"});
+					}
+				}
+				$(window).on('scroll', function() {
+					scroll()
+				});
+		</script>
+	</body>
+</html>
